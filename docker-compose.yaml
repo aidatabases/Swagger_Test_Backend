@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      args:
+        - VUE_APP_API_URL=http://api.devcloud.nic.in
+        - VUE_APP_SOCKET_IO=http://socketio.devcloud.nic.in
+    image: registry.devcloud.nic.in/frontend:latest
+    ports:
+    - 8082:80
+    restart: unless-stopped
+    networks:
+    - frontend
+#    environment:
+#    - VUE_APP_API_URL=http://api.devcloud.nic.in
+networks:
+  frontend:
+    driver: bridge

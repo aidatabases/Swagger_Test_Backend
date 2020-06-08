@@ -1,0 +1,134 @@
+.section-row{
+    .sidenav{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                margin: 0 0 10px;
+                button{
+                    display: block;
+                    color: $white;
+                    background-color: transparent;
+                    border:0;
+                    text-transform: uppercase;
+                    padding: 7px 20px 7px 45px;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    background-repeat: no-repeat;
+                    background-position: 12px center;
+                    background-size: 22px;
+                    font-weight: 600;
+                    width: 100%;
+                    text-align: left;
+                    &:hover {
+                        background-color: $white;
+                        color: $body-bg;
+                    }
+                    &:focus {
+                        outline: none !important;
+                    }
+                }
+                &:nth-child(2).active button{
+                    background-image: url(./assets/images/icon-volume-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(2) button{
+                    background-image: url(./assets/images/icon-volume-white.svg);
+                    &:hover {
+                        background-image: url(./assets/images/icon-volume-blue.svg);
+                    }
+                }
+                &:nth-child(3).active button{
+                    background-image: url(./assets/images/icon-resize-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(3) button{
+                    background-image: url(./assets/images/icon-resize-white.svg);
+                    background-position: 13px 8px;
+                    background-size:20px;
+                    &:hover {
+                        background-image: url(./assets/images/icon-resize-blue.svg);
+                    }
+                }
+                &:nth-child(4).active button{
+                    background-image: url(./assets/images/icon-snapshot-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(4) button{
+                    background-image: url(./assets/images/icon-snapshot-white.svg);
+                    background-position: 11px center;
+                    &:hover {
+                        background-image: url(./assets/images/icon-snapshot-blue.svg);
+                    }
+                }
+                &:nth-child(5).active button{
+                    background-image: url(./assets/images/icon-network-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(5) button{
+                    background-image: url(./assets/images/icon-network-white.svg);
+                    &:hover {
+                        background-image: url(./assets/images/icon-network-blue.svg);
+                    }
+                }
+                &:nth-child(6).active button{
+                    background-image: url(./assets/images/icon-dashboard-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(6) button{
+                    background-image: url(./assets/images/icon-dashboard-white.svg);
+                    &:hover {
+                        background-image: url(./assets/images/icon-dashboard-blue.svg);
+                    }
+                }
+                &:nth-child(7).active button{
+                    background-image: url(./assets/images/icon-console-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(7) button{
+                    background-image: url(./assets/images/icon-console-white.svg);
+                    &:hover {
+                        background-image: url(./assets/images/icon-console-blue.svg);
+                    }
+                }
+                &:nth-child(8).active button{
+                    background-image: url(./assets/images/icon-log-blue.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(8) button{
+                    background-image: url(./assets/images/icon-log-white.svg);
+                    &:hover {
+                        background-image: url(./assets/images/icon-log-blue.svg);
+                    }
+                }
+                &:nth-child(9).active button{
+                    background-image: url(./assets/images/local-block-storage.svg);
+                    background-color: $white;
+                    color: $body-bg;
+                }
+                &:nth-child(9) button{
+                    background-image: url(./assets/images/local-block-storage.svg);
+                    &:hover {
+                        background-image: url(./assets/images/local-block-storage.svg);
+                    }
+                }
+                &.active button, &:last-child{
+                    margin: 0;
+                }
+                &:first-child.active button, &:nth-child(2).active button, &:nth-child(3).active button, &:nth-child(4).active button,
+                &:nth-child(5).active button, &:nth-child(6).active button, &:nth-child(7).active button{
+                    background-color: $white;
+                    color: $body-bg;
+                }
+            }
+        }
+    }
+}

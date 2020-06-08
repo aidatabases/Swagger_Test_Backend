@@ -1,0 +1,19 @@
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  padding: $modal-title-padding;
+  border-bottom: 1px solid $modal-header-border-color;
+  background-color: #0277bd;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+  text-transform: uppercase;
+  @include clearfix;
+  button{
+    span{
+      color: $white;
+    }
+    &.close{
+      opacity: 0.8;
+    }
+  }
+}

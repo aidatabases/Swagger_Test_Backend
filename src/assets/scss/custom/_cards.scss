@@ -1,0 +1,12 @@
+.card {
+  display: block;
+  background-color: #fff;
+  //background-clip: border-box;
+  //border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 20px;
+}
+
+.card-bordered {
+  border: 2px solid #00000013;
+}

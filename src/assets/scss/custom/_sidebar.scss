@@ -1,0 +1,124 @@
+.section-row{
+    .cloud-sidebar{
+        background-color: $white;
+        padding: 20px;
+        border-radius: 5px;
+        .status-box{
+            padding: 0 0 20px;
+            border-bottom: 1px solid #c4c9d2;
+            margin: 0 0 15px;
+            .pro-content{
+                text-align: center;
+                margin: 0 -10px;
+                .pro-box{
+                    float: left;
+                    width: 50%;
+                    padding: 0 10px;
+                    margin: 0 0 15px;
+                    .pro-img{
+                        position: relative;
+                        margin: 0 0 8px;
+                        span{
+                            font-size: 11px;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            display: block;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-weight: 600;
+                        }
+                    }
+                    small{
+                        //text-transform: uppercase;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                    &:nth-last-child(1), &:nth-last-child(2){
+                        margin: 0;
+                    }
+                }
+            }
+            h3{
+                margin: 0 0 20px;
+            }
+            &:last-child{
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+            p{
+                text-transform: uppercase;
+                margin: 0 0 12px;
+                span{
+                    display: block;
+                    font-size: 11px;
+                    margin: 0 0 10px;
+                }
+                strong{
+                    font-weight: 600;
+                    font-size: 20px;
+                    img{
+                        max-width: 20px;
+                        position: relative;
+                        top: -2px;
+                    }
+                }
+            }
+            .progress{
+                margin: 0;
+                height: 8px;
+                border-radius: 4px;
+                box-shadow: none;
+                background-color: #e2e7ee;
+                overflow: visible;
+                position: relative;
+                .progress-bar{
+                    border-radius: 4px;
+                    box-shadow: none;
+                    &.progress-bar-complete{
+                        background-color: #354052;
+                        position: relative;
+                        z-index: 10;
+                    }
+                    &.progress-bar-diff{
+                        background-color: #4cd964;
+                        position: relative;
+                        z-index: 9;
+                        margin-left: -4px;
+                    }
+                }
+                .btn-info {
+                    position: absolute;
+                    right: 0;
+                    top: -39px;
+                    padding: 5px 0;
+                    border-radius: 4px;
+                    font-size: 11px;
+                    background-color: #4cd964;
+                    width: 55px;
+                    text-align: center;
+                }
+            }
+            ul{
+                margin: 0 0 15px;
+                padding: 0;
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 100%;
+                    list-style: none;
+                    font-size: 13px;
+                    margin: 0 0 5px;
+                }
+            }
+            .btn{
+                margin:0 0 20px;
+                display: block;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

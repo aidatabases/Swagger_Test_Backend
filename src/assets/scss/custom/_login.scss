@@ -1,0 +1,320 @@
+.login-container{
+  background-color: $login-bg;
+  background-image:url(./assets/images/bg-login.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh;
+  padding: 10vh 0 0;
+  .login-content{
+	max-width: 340px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: $white;
+	> img{
+	  max-height: 65px;
+	}
+	p{
+	  margin: 10px 0;
+		a{
+			display: inline-block;
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+	.logo-grp{
+	  margin: 10px 0;
+	  a{
+		  &:first-child{
+		  width: 165px;
+		  height: auto;
+	  }
+		border-right: 1px solid $white;
+		padding: 0 8px 0 0;
+		margin: 0 5px 0 0;
+		display: inline-block;
+		img{
+		  max-height: 45px;
+		  display: inline-block;
+		}
+		&:last-child{
+		  margin: 0;
+		  padding: 0;
+		  border-right: none;
+		}
+	  }
+	}
+	h1{
+	  font-family: 'ubuntulight';
+	  font-size: 18px;
+	  font-weight: normal;
+	  color: $white;
+	  margin: 0 0 10px;
+	}
+	label{
+	  font-family: 'ubunturegular';
+	  font-weight: normal;
+	  margin: 6px 0;
+	  display: block;
+	  line-height: 14px;
+	}
+	.form-group{
+	  border: 1px solid $white;
+	  border-radius: 5px;
+	  margin: 10px 0 15px;
+	  i.fa{
+		float: left;
+		width: 36px;
+		line-height: 36px;
+		font-size: 16px;
+	  }
+	  .form-control{
+		font-family: 'ubunturegular';
+		font-weight: normal;
+		float: left;
+		width: calc(100% - 36px);
+		line-height: 36px;
+		border: none;
+		border-radius: 0;
+		height: 36px;
+		box-shadow: none;
+		color: #3d61d8;
+		background-color: $white;
+		&::-moz-placeholder {
+		  color: #3d61d8;
+		  opacity: 1;
+		}
+		&:-ms-input-placeholder { color: #3d61d8; }
+		&::-webkit-input-placeholder  { color: #3d61d8; }
+	  }
+	}
+	.btn{
+	  font-family: 'ubunturegular';
+	  font-weight: normal;
+	  background-color: $btn-color;
+	  display: block;
+	  box-shadow: none;
+	  text-shadow: none;
+	  width: 100%;
+	  height:36px;
+	  line-height: 30px;
+	  padding: 0;
+	  margin: 10px 0 15px;
+	  font-size: 16px;
+	  &:hover{
+		background-color: #1936a3;
+		color: $white;
+	  }
+	}
+	.separator{
+	  margin: 10px 0;
+	  position: relative;
+	  &::before {
+		width: 95px;
+		height: 1px;
+		background-color: $white;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform:translateY(-50%);
+		content: "";
+	  }
+	  &::after {
+		width: 95px;
+		height: 1px;
+		background-color: $white;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform:translateY(-50%);
+		content: "";
+	  }
+	  strong {
+		display: inline-block;
+		font-weight: normal;
+		position: relative;
+		z-index: 10;
+	  }
+	}
+	.separator.user{
+	  strong{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 1px solid $white;
+		line-height: 45px;
+		img{
+		  max-width: 20px;
+		}
+	  }
+	  &::before {width: 145px;}
+	  &::after { width: 145px;}
+	}
+	.btn-group{
+	  display: block;
+	  .row{
+		margin: 0 -5px;
+		.col-xs-6{
+		  padding: 0 5px;
+		}
+	  }
+	  a{
+		display: block;
+		padding: 3px;
+		color: $white;
+		font-size: 12px;
+		border-radius: 4px;
+		&.btn-google{
+		  text-align: left;
+		  background-color: #4d90ff;
+		  small{
+			background-color: #fff;
+			display: inline-block;
+			border-radius: 2px;
+			margin: 0 6px 0 0;
+			text-align: center;
+			width: 36px;
+			padding: 7px 0;
+			img{
+				display: inline-block;
+				height: 20px;
+			}
+		  }
+		  span{
+			position: relative;
+			top: 2px;;
+		  }
+		  &:hover{
+			text-decoration: none;
+		  }
+		}
+		&.btn-ubuntu{
+		  background-color: #dde0e5;
+		  text-align: center;
+		  img{
+			  max-width: 85px;
+		  }
+		}
+	  }
+	  .login-opt{
+		margin: 5px 0 0;
+		text-align: left;
+		display: block;
+		padding: 0;
+	  }
+	}
+  }
+	.btn-grp{
+      margin: 0 -2%;
+		.btn{
+			float: left;
+			width: 46%;
+          margin: 0 2%;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+  .login-container{
+	background-size: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-container{
+	background-size: contain;
+	height: auto;
+	padding: 30px 0 120px;
+	.login-content{
+	  max-width: 300px;
+	  > img{
+		max-height: 50px;
+	  }
+	  .logo-grp{
+		a{
+		  img{
+			max-height: 35px;
+		  }
+		}
+	  }
+	  h1{
+		font-size: 16px;
+	  }
+	  .separator{
+		&:before, &:after{
+		  width: 75px;
+		}
+	  }
+	  .form-group{
+		margin: 10px 0;
+		i.fa{
+		  width: 30px;
+		  line-height: 30px;
+		  font-size: 14px;
+		}
+		.form-control{
+		  width: calc(100% - 30px);
+		  font-size: 12px;
+		  line-height: 30px;
+		  height: 30px;
+		}
+	  }
+	  .btn{
+		font-size: 14px;
+		height: 30px;
+		line-height: 24px;
+		margin: 10px 0;
+	  }
+	  .separator.user{
+		strong{
+		  width: 40px;
+		  height: 40px;
+		  line-height: 30px;
+		  img{
+			max-width: 18px;
+		  }
+		}
+		&:before, &:after{
+		  width: 130px;
+		}
+	  }
+	  .btn-group{
+		.row{
+		  &:last-child{
+			  .col-xs-6{
+				width: 100%;
+			}
+		  }
+		}
+		a{
+		  &.btn-google{
+			text-align: center;
+			background-color: $white;
+			margin: 0 0 5px;
+			small{
+				background-color: transparent;
+				margin: 0 auto;
+				border-radius: 0;
+				width: auto;
+				padding: 4px 0;
+				img{
+					height: 27px;
+				}
+			}
+			span{
+				display: none;
+			}
+		  }
+		  &.btn-ubuntu{
+			  margin: 0 0 5px;
+		  }
+		  &.login-opt{
+			  margin: 2px 0;
+			  text-align: center;
+			  padding: 0;
+		  }
+		}
+	  }
+	}
+  }
+}
